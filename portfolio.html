@@ -24,11 +24,12 @@
     </header>
     <div class="container">
       <ul class="cards">
+
         <li
           class="cards_item"
-          id="item_salad"
+          id="platformerUnreal"
           onclick="window.dialog0.showModal();"
-        >
+          >
           <div class="card">
             <div class="card_price">2023</div>
             <div class="card_image">
@@ -39,16 +40,20 @@
             </div>
             <div class="card_content">
               <h2 class="card_title">Unreal 3D Platformer</h2>
-              <div class="card_text">
-                <p>
+                <p class="card_text">
                   This was my first Unreal Engine 5 project. It is a simple
                   platformer made with Blueprint scripting only.
                 </p>
-              </div>
             </div>
           </div>
+
+          
         </li>
-        <li class="cards_item" id="item_salad">
+
+        <li class="cards_item"
+          id="platformerUnity"
+          onclick="window.dialog1.showModal();"
+          >
           <div class="card">
             <div class="card_price">2022</div>
             <div class="card_image">
@@ -58,100 +63,44 @@
               />
             </div>
             <div class="card_content">
-              <h2 class="card_title">Unreal 3D Platformer</h2>
-              <div class="card_text">
-                <p>
+              <h2 class="card_title">Unity 2D Platformer</h2> 
+                <p class="card_text">
                   This was my first Unreal Engine 5 project. It is a simple
                   platformer made with Blueprint scripting only.
                 </p>
-              </div>
             </div>
           </div>
         </li>
       </ul>
+
       <dialog id="dialog0">
-        <section class="carousel" aria-label="Gallery">
-          <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper">
-                <a href="#carousel__slide4" class="carousel__prev"
-                  >Go to last slide</a
-                >
-                <a href="#carousel__slide2" class="carousel__next"
-                  >Go to next slide</a
-                >
-              </div>
-            </li>
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <a href="#carousel__slide1" class="carousel__prev"
-                >Go to previous slide</a
-              >
-              <a href="#carousel__slide3" class="carousel__next"
-                >Go to next slide</a
-              >
-            </li>
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <a href="#carousel__slide2" class="carousel__prev"
-                >Go to previous slide</a
-              >
-              <a href="#carousel__slide4" class="carousel__next"
-                >Go to next slide</a
-              >
-            </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-              <div class="carousel__snapper"></div>
-              <a href="#carousel__slide3" class="carousel__prev"
-                >Go to previous slide</a
-              >
-              <a href="#carousel__slide1" class="carousel__next"
-                >Go to first slide</a
-              >
-            </li>
-          </ol>
-          <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide1" class="carousel__navigation-button"
-                  >Go to slide 1</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide2" class="carousel__navigation-button"
-                  >Go to slide 2</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide3" class="carousel__navigation-button"
-                  >Go to slide 3</a
-                >
-              </li>
-              <li class="carousel__navigation-item">
-                <a href="#carousel__slide4" class="carousel__navigation-button"
-                  >Go to slide 4</a
-                >
-              </li>
-            </ol>
-          </aside>
-        </section>
+        <div class="imageContainer" id="platformerUnrealImages">
+          <button id="left-btn"><i class="arrow"></i></button>
+          <img class="carousel" src="" alt="">
+          <button id="right-btn"><i class="arrow"></i></button>
+        </div>
         <p>
-          A CSS-only modal based on the
-          <a
-            href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop"
-            target="_blank"
-            >::backdrop</a
-          >
-          pseudo-class. Hope you find it helpful.
-        </p>
-        <p>
-          You can also change the styles of the <code>::backdrop</code> from the
-          CSS.
+          it's the first modal
         </p>
         <button onclick="window.dialog0.close();" aria-label="close" class="x">
           ❌
         </button>
       </dialog>
+
+      <dialog id="dialog1">
+        <div class="imageContainer" id="platformerUnityImages">
+          <button id="left-btn"><i class="arrow"></i></button>
+          <img class="carousel" src="" alt="">
+          <button id="right-btn"><i class="arrow"></i></button>
+        </div>
+        <p>
+          it's the second modal
+        </p>
+        <button onclick="window.dialog1.close();" aria-label="close" class="x">
+          ❌
+        </button>
+      </dialog>
+
     </div>
     <footer>
       <a href="https://be.linkedin.com/in/ana-tronion-3ba323250/en"
@@ -167,5 +116,8 @@
         ><img src="image/github_icon.svg" alt="Github Icon"
       /></a>
     </footer>
+
+    <script src="JS/main.js"></script>
+
   </body>
 </html>
