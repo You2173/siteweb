@@ -67,7 +67,7 @@ header h1 {
   border-radius: 1rem;
   font-size: large;
   padding: 1rem;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .rightpart button:hover {
   cursor: pointer;
