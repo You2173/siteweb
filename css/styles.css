@@ -107,6 +107,9 @@ footer {
 
 footer img {
   padding: 1rem;
+  color: var(--backgroundcolor);
+}
+
 }
 
 /* -----------------------------Portfolio----------------------------- */
@@ -145,6 +148,7 @@ footer img {
     top: -100px;
     background: linear-gradient(0deg, #091014 10%, rgba(0, 0, 0, 0) 100%);
   }
+
 }
 
 .card {
@@ -180,7 +184,7 @@ footer img {
   }
 }
 
-.card_price {
+.card_year {
   position: relative;
   top: 10px;
   right: 16px;
@@ -344,6 +348,15 @@ dialog {
   border: 0;
   aspect-ratio: 16/9;
 }
+
+iframe{
+  width: 100%;
+}
+
+.mySlides{
+  width: 100%;
+}
+
 .dot {
   cursor: pointer;
   height: 1rem;
