@@ -16,20 +16,19 @@
     <header>
       <div class="navbar">
         <h2 class="nom">Ana Tronion</h2>
-        <a class="active" href="index.html">Home</a>
-        <a href="portfolio.html">Works</a>
+        <a href="index.html">Home</a>
+        <a class="active" href="portfolio.html">Works</a>
         <!-- <a href="contact.html">Contact</a> -->
         <h2 class="nom"></h2>
       </div>
     </header>
     <div class="container">
       <ul class="cards">
-
         <li
           class="cards_item"
           id="platformerUnreal"
           onclick="window.dialog0.showModal();"
-          >
+        >
           <div class="card">
             <div class="card_price">2023</div>
             <div class="card_image">
@@ -40,20 +39,19 @@
             </div>
             <div class="card_content">
               <h2 class="card_title">Unreal 3D Platformer</h2>
-                <p class="card_text">
-                  This was my first Unreal Engine 5 project. It is a simple
-                  platformer made with Blueprint scripting only.
-                </p>
+              <p class="card_text">
+                This was my first Unreal Engine 5 project. It is a simple
+                platformer made with Blueprint scripting only.
+              </p>
             </div>
           </div>
-
-          
         </li>
 
-        <li class="cards_item"
+        <li
+          class="cards_item"
           id="platformerUnity"
           onclick="window.dialog1.showModal();"
-          >
+        >
           <div class="card">
             <div class="card_price">2022</div>
             <div class="card_image">
@@ -63,24 +61,93 @@
               />
             </div>
             <div class="card_content">
-              <h2 class="card_title">Unity 2D Platformer</h2> 
-                <p class="card_text">
-                  This was my first Unreal Engine 5 project. It is a simple
-                  platformer made with Blueprint scripting only.
-                </p>
+              <h2 class="card_title">Unity 2D Platformer</h2>
+              <p class="card_text">
+                This was my first Unreal Engine 5 project. It is a simple
+                platformer made with Blueprint scripting only.
+              </p>
             </div>
           </div>
         </li>
       </ul>
 
       <dialog id="dialog0">
-        <div class="imageContainer" id="platformerUnrealImages">
-          <button id="left-btn"><i class="arrow"></i></button>
-          <img class="carousel" src="" alt="">
-          <button id="right-btn"><i class="arrow"></i></button>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <div class="carouselIframeWrapper">
+              <iframe
+                width="600"
+                height="300"
+                class="carouselIframe"
+                src="https://www.youtube-nocookie.com/embed/6eeGI_xNBDI?si=jjmcZruU5e0LnktF"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <div class="carouselIframeWrapper">
+              <iframe
+                width="600"
+                height="300"
+                src="https://www.youtube-nocookie.com/embed/hFbWfCNJHvk?si=_6qcz3j1E7x2w7Ks"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <div class="carouselIframeWrapper">
+              <iframe
+                width="600"
+                height="300"
+                src="https://www.youtube-nocookie.com/embed/OZEx1n_TEOo?si=e2sxmsE0775cYN5w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img class="carouselImage" src="image/platformerUnreal.jpg" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
         <p>
-          it's the first modal
+          This is a project I made for school after a 5 days workshop. I was
+          inspired by Crash Bandicoot.
+        </p>
+        <p>
+          This project allowed me to experiment things using blueprint
+          (especially with Blueprint interfaces). It also helped me
+          understanding how to make a better player character for my other
+          games.
+        </p>
+        <p>
+          None of the assets in this project are mine, they're from websites
+          such as Mixamo or Quixel.
         </p>
         <button onclick="window.dialog0.close();" aria-label="close" class="x">
           ❌
@@ -90,17 +157,14 @@
       <dialog id="dialog1">
         <div class="imageContainer" id="platformerUnityImages">
           <button id="left-btn"><i class="arrow"></i></button>
-          <img class="carousel" src="" alt="">
+          <img class="carousel" src="" alt="" />
           <button id="right-btn"><i class="arrow"></i></button>
         </div>
-        <p>
-          it's the second modal
-        </p>
+        <p>it's the second modal</p>
         <button onclick="window.dialog1.close();" aria-label="close" class="x">
           ❌
         </button>
       </dialog>
-
     </div>
     <footer>
       <a href="https://be.linkedin.com/in/ana-tronion-3ba323250/en"
@@ -117,7 +181,6 @@
       /></a>
     </footer>
 
-    <script src="JS/main.js"></script>
-
+    <script src="js/carousel.js"></script>
   </body>
 </html>
