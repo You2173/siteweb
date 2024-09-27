@@ -110,16 +110,14 @@ footer img {
   color: var(--backgroundcolor);
 }
 
-}
-
 /* -----------------------------Portfolio----------------------------- */
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (orientation:portrait){
+    grid-template-columns: auto;
+  }
 }
 
 .cards_item {

@@ -69,6 +69,52 @@
             </div>
           </div>
         </li>
+
+        <li
+          class="cards_item"
+          id="shamanicquest"
+          onclick="window.dialogboardgame.showModal();"
+        >
+          <div class="card">
+            <div class="card_year">2023</div>
+            <div class="card_image">
+              <img
+                src="https://preview.redd.it/xfqt5fd5pu121.png?auto=webp&s=2353f2fb216d62657a3cb02d477c729ed69e931a"
+                alt="Shamanic Quest"
+              />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Shamanic Quest</h2>
+              <p class="card_text">
+                A roll & write board game about summoning Hindu divinities to save villages from destruction. The person with the most points at the end of the game wins!
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="cards_item"
+          id="Overstrum"
+          onclick="window.dialogOverstrum.showModal();"
+        >
+          <div class="card">
+            <div class="card_year">2023</div>
+            <div class="card_image">
+              <img
+                src="image/Overstrum/Overstrum_Logo.png"
+                alt="Overstrum"
+              />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Overstrum</h2>
+              <p class="card_text">
+                A Wario Ware like game using a Guitar Hero guitar as a controller.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        
       </ul>
 
       <dialog id="dialogUnreal">
@@ -155,16 +201,57 @@
       </dialog>
 
       <dialog id="dialog1">
-        <div class="imageContainer" id="platformerUnityImages">
-          <button id="left-btn"><i class="arrow"></i></button>
-          <img class="carousel" src="" alt="" />
-          <button id="right-btn"><i class="arrow"></i></button>
+        <div class="slideshow-container">
+          <div class="imageContainer" id="platformerUnityImages">
+            <button id="left-btn"><i class="arrow"></i></button>
+            <img class="carousel" src="" alt="" />
+            <button id="right-btn"><i class="arrow"></i></button>
+          </div>
         </div>
         <p>it's the second modal</p>
         <button onclick="window.dialog1.close();" aria-label="close" class="x">
           ❌
         </button>
       </dialog>
+
+      <dialog id="dialogboardgame">
+        <div class="imageContainer" id="platformerUnityImages">
+          <button id="left-btn"><i class="arrow"></i></button>
+          <img class="carousel" src="" alt="" />
+          <button id="right-btn"><i class="arrow"></i></button>
+        </div>
+        <p>This is a project made during my first year at CG Academy. We had to create a roll & write game.
+          I personally took care of designing and writing the rules booklet, and of drawing some assets for the animal cards.
+          This project helped me understanding game design better.</p>
+        <p>Additionally, we had to create a website, a key art and a concept art for the game. It was the first time I had to create a website.
+          Drawing isn't really my strong suit, but I think I did fine on these ones.</p>
+        <button onclick="window.dialogboardgame.close();" aria-label="close" class="x">
+          ❌
+        </button>
+      </dialog>
+
+      <dialog id="dialogOverstrum">
+        <div class="imageContainer" id="platformerUnityImages">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img class="carouselImage" src="image/Overstrum/ggj2024_RomanePlay.jpg" />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img class="carouselImage" src="image/Overstrum/ggj2024_ourGroup.jpg" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <p>This is a project I made with friends during Global Game Jam 2024. It is made using Unity. Over the course of the weekend, we managed to design and implement 11 mini-games exploiting all the possibilities offered by the controller.</p>
+        <p>I'm glad we could work on this game, as it allowed me to experiment things with alternative controllers, which is something I'd really like to dig in the future.</p>
+        <p>It is available on <a href="https://you2173.itch.io/overstrum">itch.io </a> for free, although a Wii Guitar Hero guitar is needed to play it.</p>
+        <button onclick="window.dialogOverstrum.close();" aria-label="close" class="x">
+          ❌
+        </button>
+      </dialog>
+
     </div>
     <footer>
       <a href="mailto:ugo.tronion.pro@gmail.com"
