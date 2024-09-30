@@ -26,6 +26,25 @@
       <ul class="cards">
         <li
           class="cards_item"
+          id="Overstrum"
+          onclick="window.dialogOverstrum.showModal();initializeSlides('dialogOverstrum');"
+        >
+          <div class="card">
+            <div class="card_year">2024</div>
+            <div class="card_image">
+              <img src="image/Overstrum/Overstrum_Logo.png" alt="Overstrum" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Overstrum</h2>
+              <p class="card_text">
+                A Wario Ware like game using a Guitar Hero guitar as a
+                controller.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          class="cards_item"
           id="platformerUnreal"
           onclick="window.dialogUnreal.showModal();initializeSlides('dialogUnreal');"
         >
@@ -53,18 +72,18 @@
           onclick="window.dialogUnity2D.showModal();initializeSlides('dialogUnity2D');"
         >
           <div class="card">
-            <div class="card_year">2022</div>
+            <div class="card_year">2023</div>
             <div class="card_image">
               <img
-                src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg"
-                alt="mixed vegetable salad in a mason jar. "
+                src="image/Unity2D/platformer2D.jpg"
+                alt="My first Unity Project."
               />
             </div>
             <div class="card_content">
               <h2 class="card_title">Unity 2D Platformer</h2>
               <p class="card_text">
-                This was my first Unreal Engine 5 project. It is a simple
-                platformer made with Blueprint scripting only.
+                A simple 2D platformer made with Unity. It features a shotgun
+                jump mechanic!
               </p>
             </div>
           </div>
@@ -94,25 +113,7 @@
           </div>
         </li>
 
-        <li
-          class="cards_item"
-          id="Overstrum"
-          onclick="window.dialogOverstrum.showModal();initializeSlides('dialogOverstrum');"
-        >
-          <div class="card">
-            <div class="card_year">2023</div>
-            <div class="card_image">
-              <img src="image/Overstrum/Overstrum_Logo.png" alt="Overstrum" />
-            </div>
-            <div class="card_content">
-              <h2 class="card_title">Overstrum</h2>
-              <p class="card_text">
-                A Wario Ware like game using a Guitar Hero guitar as a
-                controller.
-              </p>
-            </div>
-          </div>
-        </li>
+        
       </ul>
 
       <dialog id="dialogUnreal">
@@ -200,8 +201,52 @@
 
       <dialog id="dialogUnity2D">
         <div class="slideshow-container">
-          <div class="imageContainer" id="platformerUnityImages">
-            <img class="carousel" src="" alt="" />
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <div class="carouselIframeWrapper">
+              <iframe
+                class="carouselIframe"
+                src="https://www.youtube-nocookie.com/embed/2vVy8M0i5v0?si=reqkJmHQn1iSLHV7"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <div class="carouselIframeWrapper">
+                <iframe
+                  class="carouselIframe"
+                  src="https://www.youtube-nocookie.com/embed/YyYYuCv2ggo?si=nkFIMR-d-LCPvO7-"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <div class="carouselIframeWrapper">
+                <iframe
+                  class="carouselIframe"
+                  src="https://www.youtube-nocookie.com/embed/8FYepKzE7Sw?si=wO-ZYt86i2QPASdZ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img class="carouselImage" src="image/Unity2D/platformer2D.jpg" />
+            </div>
             <a class="prev" onclick="plusSlides(-1, 'dialogUnity2D')"
               >&#10094;</a
             >
@@ -209,15 +254,24 @@
               >&#10095;</a
             >
           </div>
-        </div>
-        <p>it's the second modal</p>
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1, 'dialogUnity2D')"></span>
+            <span class="dot" onclick="currentSlide(2, 'dialogUnity2D')"></span>
+            <span class="dot" onclick="currentSlide(3, 'dialogUnity2D')"></span>
+            <span class="dot" onclick="currentSlide(4, 'dialogUnity2D')"></span>
+          </div>
+        
+        <p>A project I made for school after a 5 days workshop with Unity. It is a 2D platformer in which you play as a little guy with a big shotgun.</p>
+          <p>I learned a lot on colisions and hit detection using raycast with this project. I also learned how to handle 2D projectiles and how to use coroutines.
+          The thing I like the most about this project is the shotgun jump mechanic.</p>
+          <p>Once again, the assets in this project are not mine. They all come from the Unity Asset Store.</p>
         <button
           onclick="window.dialogUnity2D.close();"
           aria-label="close"
           class="x"
         >
           ❌
-        </button>
+        </button></div>
       </dialog>
 
       <dialog id="dialogboardgame">
@@ -253,14 +307,35 @@
       <dialog id="dialogOverstrum">
         <div class="imageContainer" id="platformerUnityImages">
           <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
+            <div class="numbertext">1 / 5</div>
+            <img
+              class="carouselImage"
+              src="image/Overstrum/OverstrumLuth.png"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img
+              class="carouselImage"
+              src="image/Overstrum/OverstrumWakeUp.png"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img
+              class="carouselImage"
+              src="image/Overstrum/OverstrumIRL2.jpg"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
             <img
               class="carouselImage"
               src="image/Overstrum/ggj2024_RomanePlay.jpg"
             />
           </div>
           <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
+            <div class="numbertext">5 / 5</div>
             <img
               class="carouselImage"
               src="image/Overstrum/ggj2024_ourGroup.jpg"
@@ -275,6 +350,9 @@
         <div style="text-align: center">
           <span class="dot" onclick="currentSlide(1, 'dialogOverstrum')"></span>
           <span class="dot" onclick="currentSlide(2, 'dialogOverstrum')"></span>
+          <span class="dot" onclick="currentSlide(3, 'dialogOverstrum')"></span>
+          <span class="dot" onclick="currentSlide(4, 'dialogOverstrum')"></span>
+          <span class="dot" onclick="currentSlide(5, 'dialogOverstrum')"></span>
         </div>
         <p>
           This is a project I made with friends during Global Game Jam 2024. It
@@ -289,7 +367,7 @@
         </p>
         <p>
           It is available on
-          <a href="https://you2173.itch.io/overstrum">itch.io </a> for free,
+          <a href="https://you2173.itch.io/overstrum">itch.io</a> for free,
           although a Wii Guitar Hero guitar is needed to play it.
         </p>
         <button

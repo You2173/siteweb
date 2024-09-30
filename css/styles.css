@@ -115,7 +115,7 @@ footer img {
 .cards {
   display: grid;
   grid-template-columns: 50% 50%;
-  @media screen and (orientation:portrait){
+  @media screen and (orientation: portrait) {
     grid-template-columns: auto;
   }
 }
@@ -146,7 +146,6 @@ footer img {
     top: -100px;
     background: linear-gradient(0deg, #091014 10%, rgba(0, 0, 0, 0) 100%);
   }
-
 }
 
 .card {
@@ -347,11 +346,11 @@ dialog {
   aspect-ratio: 16/9;
 }
 
-iframe{
+iframe {
   width: 100%;
 }
 
-.mySlides{
+.mySlides {
   width: 100%;
 }
 
