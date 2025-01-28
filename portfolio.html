@@ -85,7 +85,27 @@
             </div>
           </div>
         </li>
-
+        <li
+          class="cards_item"
+          id="Shiptrick3077"
+          onclick="window.dialogShiptrick.showModal();initializeSlides('dialogShiptrick');"
+        >
+          <div class="card">
+            <div class="card_year">2024</div>
+            <div class="card_image">
+              <img
+                src="image/Shiptrick 3000/maintitleShip.png"
+                alt="Shiptrick3077"
+              />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Shiptrick3077</h2>
+              <p class="card_text">
+                A game where you pilot a spaceship using a real-life helm!
+              </p>
+            </div>
+          </div>
+        </li>
         <li
           class="cards_item"
           id="platformerUnity"
@@ -200,6 +220,64 @@
             ❌
           </button>
         </dialog>
+        <dialog id="dialogShiptrick">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <div class="carouselIframeWrapper">
+                <iframe
+                  class="carouselIframe"
+                  src="https://www.youtube-nocookie.com/embed/7hvqIS-LISM?si=TIrY6sNzUm-NMIar"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img class="carouselImage" src="image/Shiptrick 3000/SomeonePlayingShipTrick.jpg" />
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img class="carouselImage" src="image/Shiptrick 3000/gouvernail.jpg" />
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img class="carouselImage" src="image/Shiptrick 3000/maintitleShip.png" />
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 'dialogShiptrick')"
+                >&#10094;</a
+              >
+              <a class="next" onclick="plusSlides(1, 'dialogShiptrick')"
+                >&#10095;</a
+              >
+            </div>
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1, 'dialogShiptrick')"></span>
+              <span class="dot" onclick="currentSlide(2, 'dialogShiptrick')"></span>
+              <span class="dot" onclick="currentSlide(3, 'dialogShiptrick')"></span>
+              <span class="dot" onclick="currentSlide(4, 'dialogShiptrick')"></span>
+            </div>
+            <p>
+              A game about making tricks with a boat cruising through a sea of stars. Now with a real life steering helm!
+            </p>
+            <p>
+              This is a game made for school with my friends Luca Mevis, Cyril Naessens and Marc Verdonk during a 5 day workshop. We had to create an arcade game using an handmade custom controller.
+              We decided to make a game in which you pilot a ship that can jump on waves and do tricks in the air, SSX style. All of that using a steering wheel made of papier-mache and a mouse.
+              The game is made using Unreal Engine 5 (Blueprint).
+              I loved working on this project, since it was using an alternative controller. Programming the player's behaviour was a totally different thing since I had to take the weird controller into account. 
+            </p>
+            <button
+              onclick="window.dialogShiptrick.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
       <dialog id="dialogUnreal">
         <!-- Slideshow container -->
         <div class="slideshow-container">
