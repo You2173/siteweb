@@ -155,6 +155,10 @@ footer img {
   max-width: 800px;
   margin: 0 auto;
   cursor: pointer;
+  @media screen and (orientation: portrait) {
+    max-width: 95%;
+    padding:0.2rem
+  }
 }
 
 .card_image {
@@ -200,6 +204,10 @@ footer img {
   margin-bottom: 24px;
   text-shadow: black 1px 0 15px;
   color: white;
+  @media screen and (orientation: portrait) {
+    font-size: 2.2rem;
+    line-height: 32px;
+  }
 }
 
 .card_text {
@@ -221,6 +229,9 @@ footer img {
   font-size: 36px;
   font-weight: 400;
   text-shadow: black 3px 0px 6px;
+  @media screen and (orientation: portrait) {
+    font-size: 24px;
+  }
 }
 
 #item_fig .card:after {
