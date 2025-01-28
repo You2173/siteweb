@@ -45,22 +45,42 @@
         </li>
         <li
           class="cards_item"
-          id="platformerUnreal"
-          onclick="window.dialogUnreal.showModal();initializeSlides('dialogUnreal');"
+          id="ElectricalWatchgirl"
+          onclick="window.dialogEW.showModal();initializeSlides('dialogEW');"
         >
           <div class="card">
-            <div class="card_year">2023</div>
+            <div class="card_year">2024</div>
             <div class="card_image">
               <img
-                src="image/platformerUnreal.jpg"
-                alt="My first Unreal Project"
+                src="image/Electrical Watchgirl/EWlogo.png"
+                alt="Electrical Watchgirl Logo"
               />
             </div>
             <div class="card_content">
-              <h2 class="card_title">Unreal 3D Platformer</h2>
+              <h2 class="card_title">Electrical Watchgirl</h2>
               <p class="card_text">
-                This was my first Unreal Engine 5 project. It is a simple
-                platformer made with Blueprint scripting only.
+                A Survivors-like game made under 5 days on Unreal Engine 5.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li
+          class="cards_item"
+          id="Spirates"
+          onclick="window.dialogSpirates.showModal();initializeSlides('dialogSpirates');"
+        >
+          <div class="card">
+            <div class="card_year">2024</div>
+            <div class="card_image">
+              <img
+                src="image/Spirates/keyartspirates.png"
+                alt="Spirates"
+              />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Spirates</h2>
+              <p class="card_text">
+                A simple online strategy/idle web-based game about Space Pirates and Space Ships.
               </p>
             </div>
           </div>
@@ -91,31 +111,95 @@
 
         <li
           class="cards_item"
-          id="shamanicquest"
-          onclick="window.dialogboardgame.showModal();initializeSlides('dialogboardgame');"
+          id="platformerUnreal"
+          onclick="window.dialogUnreal.showModal();initializeSlides('dialogUnreal');"
         >
           <div class="card">
             <div class="card_year">2023</div>
             <div class="card_image">
               <img
-                src="https://preview.redd.it/xfqt5fd5pu121.png?auto=webp&s=2353f2fb216d62657a3cb02d477c729ed69e931a"
-                alt="Shamanic Quest"
+                src="image/platformerUnreal.jpg"
+                alt="My first Unreal Project"
               />
             </div>
             <div class="card_content">
-              <h2 class="card_title">Shamanic Quest</h2>
+              <h2 class="card_title">Unreal 3D Platformer</h2>
               <p class="card_text">
-                A roll & write board game about summoning Hindu divinities to
-                save villages from destruction. The person with the most points
-                at the end of the game wins!
+                This was my first Unreal Engine 5 project. It is a simple
+                platformer made with Blueprint scripting only.
               </p>
             </div>
           </div>
         </li>
 
         
-      </ul>
 
+        
+
+        
+      </ul>
+      <dialog id="dialogEW">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <div class="carouselIframeWrapper">
+              <iframe
+                class="carouselIframe"
+                src="https://www.youtube-nocookie.com/embed/hOczXeLqp2c?si=z3pnHeEhvgIrumDA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img class="carouselImage" src="image/Electrical Watchgirl/EWMainMenu.png" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img class="carouselImage" src="image/Electrical Watchgirl/EWInGame1.png" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img class="carouselImage" src="image/Electrical Watchgirl/EWInGame2.png" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 'dialogEW')"
+              >&#10094;</a
+            >
+            <a class="next" onclick="plusSlides(1, 'dialogEW')"
+              >&#10095;</a
+            >
+          </div>
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1, 'dialogEW')"></span>
+            <span class="dot" onclick="currentSlide(2, 'dialogEW')"></span>
+            <span class="dot" onclick="currentSlide(3, 'dialogEW')"></span>
+            <span class="dot" onclick="currentSlide(4, 'dialogEW')"></span>
+          </div>
+          <p>
+            This is a group project I made for school during a 5 days workshop. It is a Survivors-like game 
+            in which you need to survive in an electronics shop for 20 minutes using all sorts of whacky weapons.
+          </p>
+          <p>
+            We worked on this project under the supervision of some members of Belgian game studio "Fishing Cactus".
+          </p>
+          <p>
+            My role was to create the player character and the weapons' behaviors using Blueprint.
+            The player doesn't have a life bar. Instead every time they take damage, their flashlight battery power diminishes. If the flashlight turns off, it's game over! 
+            Each weapon is on auto fire and can be upgraded up to 9 times every time the player levels up.
+            Some weapons couldn't be added in time unfortunately (such as the plunger).
+          </p>
+          <button
+            onclick="window.dialogEW.close();"
+            aria-label="close"
+            class="x"
+          >
+            ❌
+          </button>
+        </dialog>
       <dialog id="dialogUnreal">
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -274,29 +358,61 @@
         </button></div>
       </dialog>
 
-      <dialog id="dialogboardgame">
+      <dialog id="dialogSpirates">
         <div class="slideshow-container">
-          <img class="carousel" src="" alt="" />
-          <a class="prev" onclick="plusSlides(-1, 'dialogboardgame')"
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img
+              class="carouselImage"
+              src="image/Spirates/login.png"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img
+              class="carouselImage"
+              src="image/Spirates/spaceship.png"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img
+              class="carouselImage"
+              src="image/Spirates/shop.png"
+            />
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img
+              class="carouselImage"
+              src="image/Spirates/leaderboard.png"
+            />
+          </div>
+          
+
+          <a class="prev" onclick="plusSlides(-1,'dialogSpirates')"
             >&#10094;</a
           >
-          <a class="next" onclick="plusSlides(1, 'dialogboardgame')"
-            >&#10095;</a
-          >
+          <a class="next" onclick="plusSlides(1,'dialogSpirates')">&#10095;</a>
         </div>
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1, 'dialogSpirates')"></span>
+            <span class="dot" onclick="currentSlide(2, 'dialogSpirates')"></span>
+            <span class="dot" onclick="currentSlide(3, 'dialogSpirates')"></span>
+            <span class="dot" onclick="currentSlide(4, 'dialogSpirates')"></span>
+          </div>
         <p>
-          This is a project made during my first year at CG Academy. We had to
-          create a roll & write game. I personally took care of designing and
-          writing the rules booklet, as well as drawing some assets for the
-          animal cards. This project helped me understanding game design better.
+          A web based strategy game in which you have to upgrade and buy ships to become the greatest space pirate!
         </p>
         <p>
-          Additionally, we had to create a website, a key art and a concept art
-          for the game. It was the first time I had to create a website. Drawing
-          isn't really my strong suit, but I think I did fine on these ones.
+          This is a game I made with my friends Luca Mevis and Cyril Naessens for school. We had to create a game design document and then try to make a game out of it.
+          I took care of developping the entirety of the game's backend.
+          Since this is a multiplayer game, it uses Firebase's Realtime Database. This project helped me understanding how to create and use a database and how to organize it properly.
+          It also helped me getting more familiar with Javascript since I had never done anything with it beforehand.
+          The game is available <a href="https://spirates-cgacademy.web.app/">here</a>.
         </p>
         <button
-          onclick="window.dialogboardgame.close();"
+          onclick="window.dialogSpirates.close();"
           aria-label="close"
           class="x"
         >
@@ -368,7 +484,7 @@
         <p>
           It is available on
           <a href="https://you2173.itch.io/overstrum">itch.io</a> for free,
-          although a Wii Guitar Hero guitar is needed to play it.
+          although a Wii Guitar Hero guitar is required to play it.
         </p>
         <button
           onclick="window.dialogOverstrum.close();"
@@ -380,7 +496,7 @@
       </dialog>
     </div>
     <footer>
-      <a href="mailto:ugo.tronion.pro@gmail.com"
+      <a href="mailto:ana.tronion@gmail.com"
         ><img src="image/mail-alt-3-svgrepo-com.svg" alt="Mail Icon"
       /></a>
       <a href="https://you2173.itch.io/"
