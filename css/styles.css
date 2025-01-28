@@ -27,6 +27,10 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (orientation:portrait){
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 .nom {
   width: 100%;
@@ -34,7 +38,15 @@ header h1 {
   padding-left: 4vh;
   font-size: 2rem;
   color: var(--backgroundcolor);
+  @media screen and (orientation:portrait){
+   margin: 0.3rem;
+  }
 }
+
+.headerButtons{
+display: flex;
+}
+
 .navbar a {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -43,6 +55,13 @@ header h1 {
   text-decoration: none;
   font-size: 2rem;
   color: var(--backgroundcolor);
+  @media screen and (orientation:portrait){
+    padding-top:0.2em;
+    padding-bottom: 0.2em;
+    width:50%;
+    padding-left:0;
+    padding-right:0;
+  }
 }
 .navbar a:hover {
   background-color: #5e5c5c42;
@@ -54,12 +73,18 @@ header h1 {
   flex-direction: row;
   align-items: top;
   justify-content: center;
+  @media screen and (orientation:portrait){
+    flex-direction: column;
+  }
 }
 .rightpart {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 60%;
+  @media screen and (orientation:portrait){
+    max-width: 100%;
+  }
 }
 .rightpart button {
   background-color: var(--maincolor);
@@ -87,6 +112,10 @@ header h1 {
 .textdiv {
   padding: 2rem;
   margin: 4rem;
+  @media screen and (orientation:portrait){
+    padding: 1rem;
+    margin: 2rem;
+  }
   background-color: var(--maincolor);
   border-radius: 2rem;
 }
